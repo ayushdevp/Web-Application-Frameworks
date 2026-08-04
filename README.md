@@ -27,5 +27,5 @@ This repository contains front-end web development assignments and projects.
 
 ## 02. Responsive CSS3 Bookstore and Events
 
-- **College Event Web:** [Live Demo](https://ayulumenuniversitycom.netlify.app/)
-- **Online Bookstore:** [Live Demo](https://ayunaldobookstore.netlify.app/)
+- **College Event Web:** [Live Demo](https://ayulumenuniversitycom.netlify.app/02-Responsive-CSS3-Bookstore-and-Events/College-Eventweb/)
+- **Online Bookstore:** [Live Demo](https://ayunaldobookstore.netlify.app/02-Responsive-CSS3-Bookstore-and-Events/Online%20Bookstore/)
