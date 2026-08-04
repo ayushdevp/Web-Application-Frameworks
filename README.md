@@ -20,7 +20,7 @@ This repository contains front-end web development assignments and projects.
 
 ## 01. HTML5 Fundamentals and MVC
 
-- ** AYUSH WEB PROFILE:** [Live Demo](https://ayushportfoliowebhtml.netlify.app/)
+- **AYUSH WEB PROFILE:** [Live Demo](https://ayushportfoliowebhtml.netlify.app/)
 - **MVC DEMO:** [Live Demo](https://ayush-mvc-html.netlify.app/)
 
 ---
