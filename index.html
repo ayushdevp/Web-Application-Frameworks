@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVC Architecture Demonstration</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; color: #333; }
+    h1, h2, h3 { color: #1a252f; }
+    .card { border: 1px solid #ddd; padding: 20px; margin-bottom: 25px; border-radius: 6px; background-color: #fafafa; }
+    .form-box { border: 1px solid #ccc; padding: 15px; width: 300px; border-radius: 5px; background-color: #fff; }
+    .form-group { margin-bottom: 10px; }
+    .workflow { background: #eef2f7; padding: 12px; border-left: 4px solid #2c3e50; font-weight: bold; }
+    footer { margin-top: 30px; font-size: 0.9em; color: #666; border-top: 1px solid #ddd; padding-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MVC Architecture Demonstration</h1>
+    <p><strong>Question 2 - Web Application Frameworks Assignment</strong></p>
+  </header>
+  <hr>
+
+  <!-- INTRODUCTION / HOME SECTION -->
+  <section class="card">
+    <h2>Introduction to MVC</h2>
+    <p>MVC stands for <strong>Model-View-Controller</strong>[cite: 1]. It is a software architecture pattern used to organize an application into three connected components[cite: 1]. The Model manages data and business logic, the View displays information to the user, and the Controller receives user input and coordinates communication between the Model and the View[cite: 1].</p>
+
+    <h3>Core Components:</h3>
+    <ul>
+      <li><strong>Model:</strong> Handles application data and rules[cite: 1].</li>
+      <li><strong>View:</strong> Presents information and interface elements[cite: 1].</li>
+      <li><strong>Controller:</strong> Processes requests and controls application flow[cite: 1].</li>
+    </ul>
+  </section>
+
+  <!-- MODEL SECTION -->
+  <section class="card">
+    <h2>1. Model Component</h2>
+    <p>The Model is the component of MVC that manages application data, business rules, and database-related operations[cite: 1]. It represents the core information used by the application[cite: 1].</p>
+
+    <h3>Responsibilities of the Model:</h3>
+    <ul>
+      <li>Store and manage application data[cite: 1].</li>
+      <li>Apply business rules and validations[cite: 1].</li>
+      <li>Retrieve data from a database[cite: 1].</li>
+      <li>Insert, update, and delete records[cite: 1].</li>
+      <li>Send updated data to the Controller[cite: 1].</li>
+    </ul>
+
+    <h3>Examples of Data Managed by the Model:</h3>
+    <ol>
+      <li>User account details[cite: 1]</li>
+      <li>Student records[cite: 1]</li>
+      <li>Product information[cite: 1]</li>
+      <li>Order and payment details[cite: 1]</li>
+      <li>Attendance and marks[cite: 1]</li>
+      <li>Login credentials[cite: 1]</li>
+    </ol>
+  </section>
+
+  <!-- VIEW SECTION -->
+  <section class="card">
+    <h2>2. View Component</h2>
+    <p>The View is the presentation component of MVC[cite: 1]. It displays data received from the Model through the Controller and provides the user interface through which users interact with the application[cite: 1].</p>
+
+    <h3>Responsibilities of the View:</h3>
+    <ul>
+      <li>Display information to the user[cite: 1].</li>
+      <li>Present forms, tables, buttons, and links[cite: 1].</li>
+      <li>Collect input from the user[cite: 1].</li>
+      <li>Send user actions to the Controller[cite: 1].</li>
+      <li>Show updated results and messages[cite: 1].</li>
+    </ul>
+
+    <h3>Examples of User Interface Elements:</h3>
+    <ul>
+      <li>Headings and paragraphs[cite: 1]</li>
+      <li>Navigation links[cite: 1]</li>
+      <li>Forms and input fields[cite: 1]</li>
+      <li>Buttons[cite: 1]</li>
+      <li>Tables[cite: 1]</li>
+      <li>Images[cite: 1]</li>
+      <li>Lists and menus[cite: 1]</li>
+    </ul>
+
+    <h3>Sample View UI:</h3>
+    <div class="form-box">
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTROLLER SECTION -->
+  <section class="card">
+    <h2>3. Controller Component</h2>
+    <p>The Controller is the component that handles user requests and controls the communication between the Model and the View[cite: 1]. It receives input from the user, asks the Model to process data, and selects the appropriate View to display the result[cite: 1].</p>
+
+    <h3>Responsibilities of the Controller:</h3>
+    <ul>
+      <li>Receive user input and requests[cite: 1].</li>
+      <li>Validate and process user actions[cite: 1].</li>
+      <li>Call the required Model functions[cite: 1].</li>
+      <li>Receive processed data from the Model[cite: 1].</li>
+      <li>Select and update the correct View[cite: 1].</li>
+    </ul>
+
+    <h3>Simple MVC Workflow:</h3>
+    <ol>
+      <li>The user performs an action in the View[cite: 1].</li>
+      <li>The View sends the request to the Controller[cite: 1].</li>
+      <li>The Controller interprets the request[cite: 1].</li>
+      <li>The Controller asks the Model to process or retrieve data[cite: 1].</li>
+      <li>The Model returns the result to the Controller[cite: 1].</li>
+      <li>The Controller sends the result to the View[cite: 1].</li>
+      <li>The View displays the updated information to the user[cite: 1].</li>
+    </ol>
+
+    <h3>Workflow Representation:</h3>
+    <p class="workflow">User &rarr; View &rarr; Controller &rarr; Model &rarr; Controller &rarr; View &rarr; User[cite: 1]</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ayush Kumar Singh | Academic Year: 2025-2026[cite: 1]</p>
+  </footer>
+
+</body>
+</html>
